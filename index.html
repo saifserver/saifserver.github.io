@@ -13,13 +13,11 @@
 			ga('create', 'UA-96642426-1', 'auto');
 			ga('send', 'pageview');
 			
-			function handleOutboundLinkClicks(event) {
- 			ga('send', 'event', {
-    			eventCategory: 'Outbound Link',
-    			eventAction: 'click',
-    			eventLabel: event.target.href,
-    			transport: 'beacon'
-  			});
+			var trackOutboundLink = function(url) {
+   			ga('send', 'event', 'outbound', 'click', url, {
+     				'transport': 'beacon',
+     				'hitCallback': function(){document.location = url;}
+   			});
 			}
 		</script>	
 	</head>
@@ -117,7 +115,7 @@ p.big { line-height: 1.9; }
 
 	<footer class="w3-container w3-teal w3-center w3-margin-top">
 		<p>If you’d like to connect, feel free to <a href="mailto:saifuddin.ksyed@gmail.com" style="text-decoration:none" class="w3-hover-opacity" >email</a> or stalk me elsewhere on the web. &#x1f609</p>
-		<a title="facebook" target="_blank" href="https://www.facebook.com/100006665290943"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a title="facebook" target="_blank" href="https://www.facebook.com/100006665290943" onClick="ga('send', 'event', { eventCategory: 'affiliate_facebook', eventAction: 'click', eventLabel: 'facebook'});"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
 		<a style="padding-left:7px;" title="Instagram" target="_blank" href="https://www.instagram.com/saifylovezyou"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 		<!--  <a style="padding-left:7px;" title="Google Plus" target="_blank" href="https://plus.google.com/118413988814471496825"><i class="fa fa-google-plus-official w3-hover-opacity"></i></a> -->	
 		<a style="padding-left:7px;" title="Twitter" target="_blank" href="https://twitter.com/saifylovezyou" onclick="handleOutboundLinkClicks('https://twitter.com/saifylovezyou'); return false;"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
