@@ -3,28 +3,19 @@
 	<head>
 		<link rel="shortcut icon" href="icon.ico" />
 		<title>cat /dev/random | saify</title>
+		
 		<script>
-  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  			ga('create', 'UA-96642426-1', 'auto');
-  			ga('send', 'pageview');
+			ga('create', 'UA-96642426-1', 'auto');
+			ga('send', 'pageview');
 			
-			/**
-			* Function that tracks a click on an outbound link in Analytics.
-			* This function takes a valid URL string as an argument, and uses that URL string
-			* as the event label. Setting the transport method to 'beacon' lets the hit be sent
-			* using 'navigator.sendBeacon' in browser that support it.
-			*/
-			var trackOutboundLink = function(url) {
-  			ga('send', 'event', 'outbound', 'click', url, {
-    			'transport': 'beacon',
-     			'hitCallback': function(){document.location = url;}
-   			});
-			}
-		</script>
+			ga('send', 'event', 'link', 'click', 'http://example.com', { nonInteraction: true });
+			ga('send', 'event', 'link', 'click', 'http://example.com', { nonInteraction: true });
+		</script>	
 	</head>
 	<meta charset="UTF-8">
 	<meta name="copyright" content="&copy; Copyright 2017 to Present"/>
@@ -120,8 +111,8 @@ p.big { line-height: 1.9; }
 
 	<footer class="w3-container w3-teal w3-center w3-margin-top">
 		<p>If you’d like to connect, feel free to <a href="mailto:saifuddin.ksyed@gmail.com" style="text-decoration:none" class="w3-hover-opacity" >email</a> or stalk me elsewhere on the web. &#x1f609</p>
-		<a title="facebook" target="_blank" href="https://www.facebook.com/100006665290943" onclick="trackOutboundLink('https://www.facebook.com/100006665290943'); return false;"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-		<a style="padding-left:7px;" title="Instagram" target="_blank" href="https://www.instagram.com/saifylovezyou" onclick="trackOutboundLink('https://www.instagram.com/saifylovezyou'); return false;"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a title="facebook" target="_blank" href="https://www.facebook.com/100006665290943"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a style="padding-left:7px;" title="Instagram" target="_blank" href="https://www.instagram.com/saifylovezyou"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 		<!--  <a style="padding-left:7px;" title="Google Plus" target="_blank" href="https://plus.google.com/118413988814471496825"><i class="fa fa-google-plus-official w3-hover-opacity"></i></a> -->	
 		<a style="padding-left:7px;" title="Twitter" target="_blank" href="https://twitter.com/saifylovezyou" onclick="trackOutboundLink('https://twitter.com/saifylovezyou'); return false;"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
 		<a style="padding-left:7px;" title="Github" target="_blank" href="https://github.com/saifylovezyou" onclick="trackOutboundLink('https://github.com/saifylovezyou'); return false;"><i class="fa fa-github w3-hover-opacity"></i></a>
