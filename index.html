@@ -1,211 +1,176 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="shortcut icon" href="icon.ico" />
-		<title>cat /dev/random | saify</title>
-		
-		<!--	Google Analytics -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<html lang="en">
 
-			ga('create', 'UA-96642426-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<!-- End Google Analytics -->
-	</head>
-	
-	<!-- Meta Data and other Resources -->
+<head>
 	<meta charset="UTF-8">
-	<meta name="copyright" content="&copy; Copyright 2017 to Present"/>
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="description" content="My name is Saifuddin Syed and I try to build stuff. I love programming, Java, Designing and Photography, not necessarily in that order."/>
-	<meta name="keywords" content="blog, portfolio, web, programming, designing, Saifuddin Syed, Saifuddin, Syed, saify">
 	<meta name="author" content="Saifuddin Syed">
+	<meta name="description" content="Portfolio">
+	<meta name="keywords" content="saifuddin, saify, portfolio">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="icon" href="asset/img/icon.png" type="image/gif" sizes="16x16">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck+Script">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- End Meta Data and other Resources -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra+One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eczar">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
 
-	<style>
-		<!-- Complete page CSS attributes -->
-		html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif; }
-		.w3-Marck_Script { font-family: "Marck Script", "Roboto", san-serif; }
-		p.big { line-height: 2.3; }
-		<!-- End Complete page CSS attributes -->
-		
-		<!-- Tabbed div CSS attributes -->
-			/* Style the tab */
-		div.tab 
-		{
-			overflow: hidden;
-			border:  #ccc;
-			background-color: #f1f1f1;
-		}
-			/* Style the buttons inside the tab */
-		div.tab button
-		{
-			background-color: inherit;
-			float: right;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			padding: 14px 16px;
-			transition: 0.3s;
-		}
-			/* Change background color of buttons on hover */
-		div.tab button:hover
-		{
-			background-color: #ddd;
-		}
-			/* Style the tab content */
-		.tabcontent
-		{
-			display: none;
-			border: 2px #ccc;
-			border-top: none;
-			-webkit-animation: fadeEffect 1s;
-			animation: fadeEffect 1s; /* Fading effect takes 1 second */
-		}
-		@-webkit-keyframes fadeEffect 
-		{
-			from {opacity: 0;}
-			to {opacity: 1;}
-		}
-		@keyframes fadeEffect
-		{
-			from {opacity: 0;}
-			to {opacity: 1;}
-		}
-		<!-- End Tabbed div CSS attributes -->
-	</style>
-	
-	<script>
-		<!-- Tabbed div JavaScript -->
-		function openTab(evt, tabName)
-		{
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++)
-			{
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) 
-			{
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(tabName).style.display = "block";
-			evt.currentTarget.className += " active";
-		}
-		<!-- End Tabbed div JavaScript -->
-	</script>
+	<title>cat /dev/random | saify</title>
+</head>
 
-	<body class="w3-light-grey">
-		<!-- Page Container -->
-		<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-			<!-- The Grid -->
-			<div class="w3-row-padding">
-	  
-				<!-- Left Column -->
-				<div class="w3-third ">
-		
-					<div class="w3-white w3-text-grey w3-card-4">
-						<br>
-						<div class="w3-display-container" align="center">
-							<img src="/images/logo.png" style="width:60%" alt="Avatar">
-							<h1 class="w3-Marck_Script w3-xxlarge w3-text-white w3-blue">Saifuddin Syed </h1>
-						</div>
-		
-						<div class="w3-container">
-							<p class = "big"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>CSE Grad | Enthusiast</p>
-							<p class = "big"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Pune, Maharashtra, India</p>
-							<p class = "big"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>saifuddin.ksyed@gmail.com</p>
-							<p class = "big" align="justify"><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>I think of myself as possessing a critical, dynamic and perpetual intelligence which I intend to allow it to operate.</p>
-							<br/>
-						</div>
-					</div>
-				</div>
-				<!-- End Left Column -->
-
-				<!-- Right Column -->
-				<div class="w3-twothird">
-		
-					<div class="tab w3-container w3-card-2 w3-blue">
-						<button class="tablinks" onclick="openTab(event, 'Quotes')" id="defaultOpen"><img src="/images/quote_tab.png" title="Quotes" width="28"></button>
-						<button class="tablinks" onclick="openTab(event, 'Vibe')"><img src="/images/message_tab.png" title="Messages" width="28"></button>
-					</div>
-		
-					<!-- Tabbed Panel #1 -->
-					<div id="Quotes" class="tabcontent">
-						<script>
-							// Get the element with id="defaultOpen" and click on it
-							document.getElementById("defaultOpen").click();
-						</script>
-						<div class="w3-container w3-card-2 w3-white">
-							<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-quote-left fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Quotes</h2>
-		   
-							<div class="w3-container">
-								<h5 class="w3-opacity">
-								<p align="center"><q>Design is not just what it looks like and feels like. Design is how it works.</q>
-								<p align="right"><b> - Steve Jobs</b></p></h5>
-								<hr>
-							</div>
-
-							<div class="w3-container">
-								<h5 class="w3-opacity">
-								<p align="center"><q>Intelligence is the ability to adapt to change.</q>
-								<p align="right"><b> - Stephen Hawking</b></p></h5>
-								<hr>
-							</div>
-					
-							<div class="w3-container">
-								<h5 class="w3-opacity">
-								<p align="center"><q>If you are good at something, never do it for free.</q>
-								<p align="right"><b> - The Joker</b></p></h5>
-								<hr>
-							</div>
-					
-							<div class="w3-container">
-								<h5 class="w3-opacity">
-								<p align="center"><q>I think of myself not as a great programmer; I'm just a good programmer with great habits.<br> How you look at it [my code] is pretty much how you'll see it.</q>
-								<p align="right"><b> - saify</b></p></h5>
-							</div>
-						</div>
-					</div>
-					<!-- End Tabbed Panel #1 -->
-					
-					<!-- Tabbed Panel #2 -->
-					<div id="Vibe" class="tabcontent">
-						<div class=" w3-card-2 w3-white">
-							<div class="typeform-widget" data-url="https://saify.typeform.com/to/zKMNl5" style="width: 100%; height: 600px;"></div>
-							<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id="typef_orm",b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";if(!gi.call(d,id)){js=ce.call(d,"script");js.id=id;js.src=b+"widget.js";q=gt.call(d,"script")[0];q.parentNode.insertBefore(js,q)}})()</script>
-						</div>
-					</div>
-					<!-- End Tabbed Panel #2 -->
-				</div>
-				<!-- End Right Column -->
+<body>
+	<header>
+		<h1 class="logo-name">Saifuddin Syed</h1>
+		<nav>
+			<a href="#about" class="menu">ABOUT ME</a>
+			<a href="#portfolio" class="menu">PORTFOLIO</a>
+			<a href="#contact" class="menu">CONTACT</a>
+		</nav>
+	</header>
+	<hr class="head-line">
+	<div class="flex-container">
+		<section id="about">
+			<div class="container center">
+				<h2 class="section-header center">ABOUT ME</h2>
+				<img src="asset/img/logo.png" alt="logo" class="logo">
+				<p class="content">
+					Hi! Welcome to my little corner of the Internet. I'm a striving problem solver and believer; learning peculiar things everyday.
+					<br>
+					<br>
+					<span class="highlight">And yes!</span>
+					<br>
+					<br>I can build anything from front-end to back-end and everything in-between.
+				</p>
 			</div>
-			<!-- End Grid -->
-		</div>
-		<!-- End Page Container -->
-	
-		<footer class="w3-container w3-teal w3-center w3-margin-top">
-			<p>If you’d like to connect, feel free to <a href="mailto:saifuddin.ksyed@gmail.com" style="text-decoration:none" class="w3-hover-opacity" >email</a> or stalk me elsewhere on the web. &#x1f609 </p>
-			<a title="facebook" target="_blank" href="https://www.facebook.com/100006665290943" onClick="ga('send', 'event', { eventCategory: 'affiliate_facebook', eventAction: 'click', eventLabel: 'facebook'});"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-			<a style="padding-left:7px;" title="Twitter" target="_blank" href="https://twitter.com/saifylovezyou" onClick="ga('send', 'event', { eventCategory: 'affiliate_twitter', eventAction: 'click', eventLabel: 'twitter'});"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
-			<a style="padding-left:7px;" title="Linkedin" target="_blank" href="https://www.linkedin.com/in/saifuddins/" onClick="ga('send', 'event', { eventCategory: 'affiliate_linkedin', eventAction: 'click', eventLabel: 'Linkedin'});"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-			<a style="padding-left:7px;" title="Instagram" target="_blank" href="https://www.instagram.com/saifylovezyou" onClick="ga('send', 'event', { eventCategory: 'affiliate_instagram', eventAction: 'click', eventLabel: 'instagram'});"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-			
-			
-				<p> COPYRIGHT &copy; 2018 MIT Licence </p>
+		</section>
 
-		</footer>
-	</body>
+		<section id="portfolio">
+			<div class="container">
+				<h2 class="section-header center">PORTFOLIO</h2>
+				<div class="content">
+					<p>
+						<i class="fas fa-briefcase"></i>CSE Grad | Enthusiast</p>
+					<p>
+						<i class="fas fa-home"></i>Pune, Maharashtra, India</p>
+					<p class="justify">
+						<i class="fas fa-user"></i>I think of myself as possessing a critical, dynamic and perpetual intelligence which I intend to allow it to operate.</p>
+
+					<h2 class="sub-section-header center">--- Technical Toolbox ---</h2>
+					<div class="flex-container">
+						<div class="skills">Java</div>
+						<div class="skills">Python 3</div>
+						<div class="skills">JavaScript</div>
+						<div class="skills">Algorithm & Data Structure</div>
+						<div class="skills">C++</div>
+						<div class="skills">C</div>
+						<div class="skills">HTML5 & CSS3</div>
+						<div class="skills">MySQL</div>
+						<div class="skills">MongoDB</div>
+						<div class="skills">Eclipse</div>
+						<div class="skills">Android Studio</div>
+						<div class="skills">VS Code</div>
+						<div class="skills">Git</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<br>
+			<h2 class="sub-section-header center">--- Projects ---</h2>
+			<div class="flex-container">
+				<div class="cards">
+					<img src="asset/img/patatap.jpg" alt="papatap" class="project-icon">
+					<hr class="divider"/>
+					<h2 class="title">Patatap Clone</h2>
+					<div class="info">
+						<hr class="divider"/>
+						<p class="lead">A mini fun work with paperJS, HowlerJS and particleJS to add touch to the patatap.</p>
+						<a href="#" target="_blank" class="btn">Launch</a>
+					</div>
+				</div>
+
+
+				<div class="cards">
+					<img src="asset/img/todo-list.jpg" alt="todo-list" class="project-icon">
+					<hr class="divider"/>
+					<h2 class="title">TODO List</h2>
+					<div class="info">
+						<hr class="divider"/>
+						<p class="lead">First Attempt to a simple and sample TODO list using jQuery.</p>
+						<a href="https://codepen.io/saify/full/NBzZzW/" target="_blank" class="btn">Launch</a>
+					</div>
+				</div>
+
+
+				<div class="cards">
+					<img src="asset/img/new-year-2018.jpg" alt="new-year-2018" class="project-icon">
+					<hr class="divider"/>
+					<h2 class="title">New Year 2018</h2>
+					<div class="info">
+						<hr class="divider"/>
+						<p class="lead">Geek idea to code and collab with SVG and JavaScript for New Year Greetings!</p>
+						<a href="https://codepen.io/saify/full/LebzeX/" target="_blank" class="btn">Launch</a>
+					</div>
+				</div>
+
+
+				<div class="cards">
+					<img src="asset/img/pixel-art.jpg" alt="pixel-art" class="project-icon">
+					<hr class="divider"/>
+					<h2 class="title">Pixel Art Maker</h2>
+					<div class="info">
+						<hr class="divider"/>
+						<p class="lead">Create artistic designs using pixels!</p>
+						<a href="https://codepen.io/saify/full/jxLeGX/" target="_blank" class="btn">Launch</a>
+					</div>
+				</div>
+
+				<div class="cards">
+					<img src="asset/img/comingsoon.png" alt="comingsoon" class="project-icon">
+					<hr class="divider"/>
+					<h2 class="title">Memory Game</h2>
+					<div class="info">
+						<hr class="divider"/>
+						<p class="lead">Work in Progress!</p>
+						<a href="#" target="_blank" class="btn">Launch</a>
+					</div>
+				</div>
+
+				<a href="projects.html" >
+					<div class="more-cards">
+						<i class="fas fa-arrow-alt-circle-right"></i>
+					</div>
+				</a>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact" class="container footer">
+		<h2 class="section-header center">CONTACT</h2>
+		<p class="center">If you’d like to connect, feel free to mail or stalk me elsewhere on the web. &#x1f609;</p>
+		<p class="center">
+			<a title="Facebook" target="_blank" href="https://www.facebook.com/100006665290943">
+				<i class=" s-btn fab fa-facebook-f"></i></a>
+			<a title="Instagram" target="_blank" href="https://www.instagram.com/saifylovezyou">
+				<i class="s-btn fab fa-instagram"></i></a>
+			<a title="Twitter" target="_blank" href="https://twitter.com/saifylovezyou">
+				<i class="s-btn fab fa-twitter"></i></a>
+			<a title="Gmail" target="_blank" href="mailto:saifuddin.ksyed@gmail.com">
+				<i class="s-btn fas fa-envelope"></i></a>
+			<a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/saifuddins/">
+				<i class="s-btn fab fa-linkedin-in"></i></a>
+			<a title="Codepen" target="_blank" href="https://codepen.io/saify/">
+				<i class="s-btn fab fa-codepen"></i></a>
+			<a title="Github" target="_blank" href="https://github.com/saifserver">
+				<i class="s-btn fab fa-github"></i></a>
+			<a title="StackOverflow" target="_blank" href="http://stackoverflow.com/users/6721308/saify">
+				<i class="s-btn fab fa-stack-overflow"></i></a>
+		</p>
+		<p class="center">COPYRIGHT &copy; 2018 MIT LICENCE</p>
+	</footer>
+</body>
+
 </html>
