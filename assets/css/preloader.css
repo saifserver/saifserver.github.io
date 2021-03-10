@@ -1,0 +1,85 @@
+/* ---  Preloader styles --- */
+
+#preloader-container {
+	width: 99vw;
+	height: 100%;
+	background-color: #000000;
+	position: fixed;
+	z-index: 999;
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 52%), linear-gradient(-45deg, rgba(255, 255, 255, 0) 48%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 52%);
+	background-size: 1em 1em;
+}
+
+#preloader {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	top: 45%;
+	margin: 0 auto;
+}
+
+.pl, .pl:before, .pl:after {
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.pl {
+	margin: 0 auto 1.5em auto;
+	position: relative;
+	width: 4em;
+	height: 4em;
+}
+
+.pl:before, .pl:after {
+	background: #FFF5EE;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	transform-origin: 50% 100%;
+	clip-path: polygon(0 0, 100% 0, 50% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.pl-butterfly {
+	animation-name: butterflyA;
+}
+
+.pl-butterfly:before {
+	animation-name: butterflyB;
+}
+
+.pl-butterfly:after {
+	animation-name: butterflyC;
+}
+
+@keyframes butterflyA {
+	from, to {
+		transform: translateY(0)
+	}
+	50% {
+		transform: translateY(25%)
+	}
+}
+
+@keyframes butterflyB {
+	from, 50%, to {
+		transform: rotate(60deg)
+	}
+	25%, 75% {
+		transform: rotate(120deg)
+	}
+}
+
+@keyframes butterflyC {
+	from, 50%, to {
+		transform: rotate(300deg)
+	}
+	25%, 75% {
+		transform: rotate(240deg)
+	}
+}
